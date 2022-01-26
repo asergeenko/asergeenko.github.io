@@ -1,3 +1,9 @@
+---
+title: au sujet de notre entreprise
+permalink: /about/
+lang: en
+---
+
 # About
 
 This is where you put the contents of your *About* page. Like all your pages, it's in [Markdown](https://guides.github.com/features/mastering-markdown/) format.
