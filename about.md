@@ -1,5 +1,5 @@
 ---
-title: au sujet de notre entreprise
+title: about
 permalink: /about/
 lang: en
 ---
