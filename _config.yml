@@ -29,10 +29,10 @@ plugins:
   - jekyll-github-metadata
   - jekyll-polyglot
 
-titles_from_headings:
-  enabled:     true
-  strip_title: true
-  collections: true
+#titles_from_headings:
+#  enabled:     true
+#  strip_title: true
+#  collections: true
 
 highlighter: rouge
 #markdown: kramdown
