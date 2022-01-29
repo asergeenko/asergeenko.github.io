@@ -83,8 +83,9 @@ def fetch_page(url):
 ~~~
 done = threading.Semaphore(0)
 ~~~
+
 | Поток 1              | Поток 2                 |
-| -------------------- | ----------------------- |
+| - | - |
 | ...                  | **done.acquire()**      |
 | оператор             | оператор                |
 | оператор             | оператор                |
@@ -134,7 +135,7 @@ items_cond = threading.Condition()
 ~~~
 
 | Поток **Producer**      | Поток **Consumer**      |
-| ----------------------- | ----------------------- |
+| - | - |
 | <pre>item = produce_item()<br>with cond:<br>&nbsp;&nbsp;&nbsp;&nbsp;items.append(item)<br>&nbsp;&nbsp;&nbsp;&nbsp;**cond.notify()**</pre> | <pre>with cond:<br>&nbsp;&nbsp;&nbsp;&nbsp;while not items:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**cond.wait()**<br>&nbsp;&nbsp;&nbsp;&nbsp;x = items.pop(0)<br># Что-то делаем с x</pre>|
 
 ## Barrier
