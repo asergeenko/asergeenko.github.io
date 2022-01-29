@@ -1,6 +1,6 @@
 ---
 title: Примитивы синхронизации в Python
-permalink: /synchronization-primitives-in-python/
+#permalink: /synchronization-primitives-in-python/
 lang: ru
 ---
 # Примитивы синхронизации в Python
