@@ -157,7 +157,6 @@ barrier = Barrier(5, timeout=None, action=call_after_release)
 
 
 ### Ссылки
-- [
-An Introduction to Python Concurrency](https://www.dabeaz.com/usenix2009/concurrent/Concurrent.pdf)
-- https://docs.python.org/3/library/threading.html
+- [An Introduction to Python Concurrency](https://www.dabeaz.com/usenix2009/concurrent/Concurrent.pdf)
+- [https://docs.python.org/3/library/threading.html](https://docs.python.org/3/library/threading.html)
 
