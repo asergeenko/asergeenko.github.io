@@ -12,7 +12,7 @@ lang: ru
 - [Condition](#condition)
 - [Barrier](#barrier)
 ## Зачем?
-*Метафора: голова человека и задачи в ней. Для многопроцессорности: голова дракона.*
+![](/_posts/ru/images/multitprocessing_beast.jpg)
 
 - синхронизация потоков (thread synchronization)
 - совместно используемые данные (shared data)
