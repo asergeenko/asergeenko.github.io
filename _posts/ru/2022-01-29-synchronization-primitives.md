@@ -12,7 +12,7 @@ lang: ru
 - [Condition](#condition)
 - [Barrier](#barrier)
 ## Зачем?
-![](/_posts/ru/images/multitprocessing_beast.jpg)
+![](/i/mages/ru/multitprocessing_beast.jpg)
 
 - синхронизация потоков (thread synchronization)
 - совместно используемые данные (shared data)
