@@ -6,6 +6,6 @@ lang: ru
 
 # Порядок выполнения операторов запроса в PostgreSQL
 
-![](/_posts/ru/images/postgresql_clause_execution_order.jpg)
+<img src="/_posts/ru/images/postgresql_clause_execution_order.jpg"/>
 
 
