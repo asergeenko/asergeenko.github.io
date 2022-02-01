@@ -6,6 +6,6 @@ lang: ru
 
 # Порядок выполнения операторов запроса в PostgreSQL
 
-<img src="/_posts/ru/images/postgresql_clause_execution_order.jpg"/>
+<img src="images/postgresql_clause_execution_order.jpg"/>
 
 
