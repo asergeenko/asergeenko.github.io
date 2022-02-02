@@ -1,6 +1,7 @@
 ---
 title: Оконные функции SQL
-#permalink: /sql-window-functions/
+permalink: /sql-window-functions/
+lang-ref: sql-window-functions
 lang: ru
 ---
 
