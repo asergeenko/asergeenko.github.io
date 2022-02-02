@@ -11,8 +11,7 @@
     <div class="header__langs">
       {% for post in posts %}
       {% if post.lang != page.lang %}
-      <a href="{{ site.base-url }}{{ post.url }}" class="header__lang header__lang-{{ post.lang }} title=" View in
-        {{post.lang}}" data-lang={{ post.lang }}></a>
+      <a href="{{ site.base-url }}{{ post.url }}" class="header__lang header__lang-{{ post.lang }}" title=" View in {{post.lang}}" data-lang={{ post.lang }}></a>
       {% endif %}
       {% endfor %}
     </div>
