@@ -1,6 +1,6 @@
 ---
 title: Порядок выполнения операторов запроса в PostgreSQL
-permalink: /ru/postgres-clause-execution-order/
+permalink: /postgres-clause-execution-order/
 lang: ru
 lang-ref: postgres-clause-execution-order
 ---
