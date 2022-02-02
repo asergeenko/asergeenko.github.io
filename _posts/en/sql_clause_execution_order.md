@@ -1,6 +1,6 @@
 ---
 title: Clause execution order in PostgreSQL queries
-permalink: /en/postgres-clause-execution-order/
+permalink: /postgres-clause-execution-order/
 lang: en
 lang-ref: postgres-clause-execution-order
 ---
