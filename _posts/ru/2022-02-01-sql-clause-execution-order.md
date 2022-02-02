@@ -1,7 +1,8 @@
 ---
 title: Порядок выполнения операторов запроса в PostgreSQL
-#permalink: /postgres-clause-execution-order/
+permalink: /ru/postgres-clause-execution-order/
 lang: ru
+lang-ref: postgres-clause-execution-order
 ---
 
 # Порядок выполнения операторов запроса в PostgreSQL
