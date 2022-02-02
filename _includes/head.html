@@ -50,8 +50,7 @@
   window.onload = wrap_img;
   </script> 
  <nav class="header__nav" aria-label="main">
-    <div class="header__links">
-        ...
+    <div class="header__links">       
     </div>
     {% if page.layout == 'post' %}
     {% assign posts=site.posts | where:"lang-ref", page.lang-ref | sort: 'lang' %}
