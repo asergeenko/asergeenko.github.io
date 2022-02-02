@@ -17,7 +17,7 @@
                 {% for post in posts %}
                 {% if post.lang != page.lang %}
                 <a href="{{ site.base-url }}{{ post.url }}" class="header__lang header__lang-{{ post.lang }}"
-                   title=" View in {{post.lang}}" data-lang={{ post.lang }}>{{post.lang}}</a>
+                   title=" View in {{post.lang}}" data-lang={{ post.lang }}>{{post.title}}</a>
                 {% endif %}
                 {% endfor %}
             </div>
@@ -27,7 +27,7 @@
     </div>
 </header>
 
-{#
+{% comment %}
 <div class="cookie-form-container" data-compliance-container>
             <div class="cookie-form">
                 <p class="cookie-form__content">We do use persistent first-party cookies to augment your experience in
@@ -38,4 +38,4 @@
                 <button class="button cookie-form__submit" data-compliance>OK</button>
             </div>
 </div>
-#}
+{% endcomment %}
