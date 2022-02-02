@@ -1,19 +1,38 @@
-<nav class="header__nav" aria-label="main">
-    <div class="header__links">
+<header class="site-header">
+
+    <div class="wrapper">
+        <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+
+        <nav class="header__nav" aria-label="main">
+            <div class="header__links">
+            </div>
+            {% if page.layout == 'post' %}
+            {% assign posts=site.posts | where:"lang-ref", page.lang-ref | sort: 'lang' %}
+            {% endif %}
+            {% if page.layout != 'post' %}
+            {% assign posts=site.pages | where:"lang-ref", page.lang-ref | sort: 'lang' %}
+            {% endif %}
+            {% if posts.size > 1 %}
+            <div class="header__langs">
+                {% for post in posts %}
+                {% if post.lang != page.lang %}
+                <a href="{{ site.base-url }}{{ post.url }}" class="header__lang header__lang-{{ post.lang }}"
+                   title=" View in {{post.lang}}" data-lang={{ post.lang }}>{{post.lang}}</a>
+                {% endif %}
+                {% endfor %}
+            </div>
+            {% endif %}
+        </nav>
+        <div class="cookie-form-container" data-compliance-container>
+            <div class="cookie-form">
+                <p class="cookie-form__content">We do use persistent first-party cookies to augment your experience in
+                    our website
+                    and support analytics. To learn more, please read our <a href="/policies/privacy/">privacy
+                        policy</a>.
+                </p>
+                <button class="button cookie-form__submit" data-compliance>OK</button>
+            </div>
+        </div>
+
     </div>
-    {% if page.layout == 'post' %}
-    {% assign posts=site.posts | where:"lang-ref", page.lang-ref | sort: 'lang' %}
-    {% endif %}
-    {% if  page.layout != 'post' %}
-    {% assign posts=site.pages | where:"lang-ref", page.lang-ref | sort: 'lang' %}
-    {% endif %}
-    {% if posts.size > 1 %}
-    <div class="header__langs">
-      {% for post in posts %}
-      {% if post.lang != page.lang %}
-      <a href="{{ site.base-url }}{{ post.url }}" class="header__lang header__lang-{{ post.lang }}" title=" View in {{post.lang}}" data-lang={{ post.lang }}>{{post.lang}}</a>
-      {% endif %}
-      {% endfor %}
-    </div>
-    {% endif %}
-  </nav>
+</header>
