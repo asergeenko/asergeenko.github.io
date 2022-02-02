@@ -2,6 +2,7 @@
 title: Примитивы синхронизации в Python
 lang-ref: synchronization-primitives-in-python
 lang: ru
+permalink: /ru/synchronization-primitives-in-python
 ---
 # Примитивы синхронизации в Python
 - [Lock](#lock)
